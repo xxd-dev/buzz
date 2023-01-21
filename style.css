@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Fira';
+    src: url('FiraCode-VF.ttf');
+}
+
+html {
+    height: 100%
+}
+
+body {
+    min-height: 100%;
+    background-color: #008751;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    margin: 1em;
+}
+
+pre {
+    color: #FFF1E8;
+    font-size: min(4vw, 26px);
+    font-family: 'Fira';
+}
+
+
+.gray {
+    color: #5F574F;
+}
+
+.blue {
+    color: #1D2B53;
+}
+
+.bold {
+    font-weight: bold;
+    position: absolute;
+}
+
+.no-ligatures {
+    font-variant-ligatures: none;
+}
+
+a, a * {
+    color: #FFF1E8;
+    text-decoration: underline;
+}
+
+a:hover, a *:hover {
+    background-color: #1D2B53;
+}
+
+
+.wave span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    animation: wave 1.5s infinite ease-in-out;
+    animation-delay: calc(.12s * var(--i));
+    transform: translateY(-1.5px);
+}
+
+@keyframes wave {
+    50% {
+        transform: translateY(1.5px);
+    }
+    100% {
+        transform: translateY(-1.5px);
+    }
+}
+
+
+.shake span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    animation: shake .4s infinite ease-in-out;
+    animation-delay: calc(.15s * var(--i));
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translate3d(0.0px, 0.0px, 0);
+    }
+    10% {
+        transform: translate3d(0.0px, -0.5px, 0);
+    }
+    20% {
+        transform: translate3d(0.5px, 0.5px, 0);
+    }
+    30% {
+        transform: translate3d(0.0px, 0.0px, 0);
+    }
+    40% {
+        transform: translate3d(-0.5px, -0.5px, 0);
+    }
+    50% {
+        transform: translate3d(-0.5px, 0.5px, 0);
+    }
+    60% {
+        transform: translate3d(0.0px, -0.5px, 0);
+    }
+    70% {
+        transform: translate3d(0.5px, 0.0px, 0);
+    }
+    80% {
+        transform: translate3d(0.0px, 0.0px, 0);
+    }
+    90% {
+        transform: translate3d(-0.5px, 0.0px, 0);
+    }
+}
+
+
+
